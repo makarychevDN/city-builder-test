@@ -1,0 +1,16 @@
+using Domain.Gameplay.Models;
+using Game.UseCases;
+using VContainer;
+using VContainer.Unity;
+
+namespace Infrastructure.Installers
+{
+    public class Installer : LifetimeScope
+    {
+        protected override void Configure(IContainerBuilder builder)
+        {
+            builder.Register(resolver => new Map(32, 32), Lifetime.Singleton);
+            builder.Register<PlaceBuilding>(Lifetime.Singleton);
+        }
+    }
+}
