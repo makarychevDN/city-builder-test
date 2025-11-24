@@ -11,6 +11,9 @@ namespace Infrastructure.Installers
         {
             builder.Register(resolver => new Map(32, 32), Lifetime.Singleton);
             builder.Register<PlaceBuilding>(Lifetime.Singleton);
+            builder.Register<MoveBuilding>(Lifetime.Singleton);
+            builder.Register<UpgradeBuilding>(Lifetime.Singleton);
+            builder.Register<RemoveBuilding>(Lifetime.Singleton);
         }
     }
 }
