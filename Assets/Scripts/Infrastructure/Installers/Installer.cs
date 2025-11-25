@@ -2,6 +2,7 @@ using Scripts.Domain.Gameplay.Models;
 using Scripts.Application.UseCases;
 using VContainer;
 using VContainer.Unity;
+using Scripts.Presentation;
 
 namespace Scripts.Infrastructure.Installers
 {
@@ -14,6 +15,11 @@ namespace Scripts.Infrastructure.Installers
             builder.Register<MoveBuilding>(Lifetime.Singleton);
             builder.Register<UpgradeBuilding>(Lifetime.Singleton);
             builder.Register<RemoveBuilding>(Lifetime.Singleton);
+
+            builder.Register<RandomTextContainerModel>(Lifetime.Singleton);
+            builder.Register<RandomTextContainerUpdateTextUseCase>(Lifetime.Singleton);
+            builder.RegisterComponentInHierarchy<RandomTextContainerView>();
+
         }
     }
 }
