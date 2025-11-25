@@ -17,5 +17,10 @@ namespace Scripts.Domain.Gameplay.Models
             _sizeY = sizeY;
             _grid = new Building[sizeX, sizeY];
         }
+
+        public void PlaceBuilding(int posX, int posY, Building building)
+        {
+            _grid[posX, posY] = building;
+        }
     }
 }

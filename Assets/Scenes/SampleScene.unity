@@ -426,6 +426,7 @@ MonoBehaviour:
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 1075149106}
+  buildingPrefab: {fileID: 4101856782449464153, guid: 9014511a4a745c148ad0432f835f6aca, type: 3}
 --- !u!1 &740930142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,13 +1044,14 @@ GameObject:
   - component: {fileID: 1435023871}
   - component: {fileID: 1435023870}
   - component: {fileID: 1435023869}
+  - component: {fileID: 1435023872}
   m_Layer: 5
   m_Name: Mine Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1435023868
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1065,9 +1067,9 @@ RectTransform:
   - {fileID: 1888470538}
   m_Father: {fileID: 836547279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435023869
@@ -1152,6 +1154,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435023867}
   m_CullTransparentMesh: 1
+--- !u!114 &1435023872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435023867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f75edf0e295fe43a941766fbb4043d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 1435023869}
 --- !u!1 &1701444515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,7 +1582,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: mine
+  m_text: 'Spawn
+
+    a building'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1594,8 +1611,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
