@@ -1,6 +1,6 @@
-using Domain.Gameplay.Models;
+using Scripts.Domain.Gameplay.Models;
 
-namespace Game.UseCases
+namespace Scripts.Application.UseCases
 {
     public class MoveBuilding
     {

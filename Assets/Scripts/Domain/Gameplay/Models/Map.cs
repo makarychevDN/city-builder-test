@@ -1,4 +1,4 @@
-namespace Domain.Gameplay.Models
+namespace Scripts.Domain.Gameplay.Models
 {
     public class Map
     {

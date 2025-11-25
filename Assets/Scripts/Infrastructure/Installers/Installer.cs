@@ -1,9 +1,9 @@
-using Domain.Gameplay.Models;
-using Game.UseCases;
+using Scripts.Domain.Gameplay.Models;
+using Scripts.Application.UseCases;
 using VContainer;
 using VContainer.Unity;
 
-namespace Infrastructure.Installers
+namespace Scripts.Infrastructure.Installers
 {
     public class Installer : LifetimeScope
     {

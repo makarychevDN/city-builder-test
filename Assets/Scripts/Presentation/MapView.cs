@@ -1,8 +1,8 @@
-using Domain.Gameplay.Models;
+using Scripts.Domain.Gameplay.Models;
 using UnityEngine;
 using VContainer;
 
-namespace Presentation
+namespace Scripts.Presentation
 {
     [RequireComponent(typeof(MeshRenderer))]
     public class MapView : MonoBehaviour
